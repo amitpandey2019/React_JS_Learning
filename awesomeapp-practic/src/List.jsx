@@ -10,6 +10,6 @@ function List(){
     <li> Plz Subscribe </li>
     </ol>
   );
-}
+} 
 
 export default List;

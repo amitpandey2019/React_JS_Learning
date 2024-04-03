@@ -122,35 +122,42 @@ document.getElementById("root")
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 import "./index1.css";
 
- let currDate = new Date(2023, 5, 5, 5);
- currDate = currDate.getHours();
- let greeting = "";
- const cssStyle = { };
-
- if(currDate >=1 && currDate <12){
-  greeting = 'Good Morning';
-  cssStyle.color = 'Green';
- }else if(currDate>=12 && currDate <19){
-  greeting = "Good Afternoon";
-  cssStyle.color = 'Red';
- }else{
-  greeting = "Good Night";
-  cssStyle.color = 'Black';
- }
-ReactDOM.render(
-  <>
-  <div>
-<h1>Hello Sir, <span style={cssStyle}>{greeting}</span></h1>
-</div>
-</>,
-document.getElementById("root")
-);
+ReactDOM.render( <App/>, document.getElementById("root"));
 */
-
+/*
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root")); */
+
+/* IMPORT AND EXPORT FUNCTION JS AND JSX
+
+import Reac from "react";
+import ReactDOM  from "react-dom";
+import mriirs, {favprog,  myName, myNames} from "./App";
+ReactDOM.render(
+  <>
+    <ol>
+      <li> Amit </li>
+      <li> {mriirs} </li>
+      <li> {favprog} </li>
+      <li> {myName()} </li>
+      <li> {myNames()} </li>
+    </ol>
+  </>, document.getElementById("root")
+);
+*/
+
+import React from "react";
+import ReactDOM  from "react-dom";
+import "./index.css";
+import App from "./App";
+
+
+
+ReactDOM.render( <App />,document.getElementById('root'));
+
